@@ -1,0 +1,16 @@
+.footer{
+    background-color: #e6e7e8;
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+}
+
+.table{
+display: flex;
+
+}
+
+.tableHeader{
+color: black
+}
+

@@ -2,7 +2,6 @@ import Image from "next/image"
 import linkedin from "@/app/images/linkedin.png" ;
 import github from "@/app/images/gothub.png" ;
 import behance from "@/app/images/behance.png" ;
-import Link from "next/link";
 
 export default function Header () {
     return (

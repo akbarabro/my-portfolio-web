@@ -2,7 +2,7 @@ import Header from "../components/Header";
 
 export default function Work(){
     return(
-    <div>
+        <div className="service">
         
     </div>
     )

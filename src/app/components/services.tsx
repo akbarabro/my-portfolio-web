@@ -2,8 +2,7 @@
 
 export default function archive(){
     return(<div>
-
-        <div className="whiteLine"></div>
+  
 
         <div className="service">
 
