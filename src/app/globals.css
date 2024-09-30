@@ -7,10 +7,10 @@
 }
 .headerB{
     display: flex;
-    gap: 100px;
+    gap: 6em;
     justify-content:end;
     align-items: center;
-    font-size: 18px ;
+    font-size: 1.2em ;
     font-weight:600;
     margin: 10px;
 }
@@ -136,3 +136,4 @@
     border-radius: 2em;
     width: 12em;
 }
+
