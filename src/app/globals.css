@@ -2,26 +2,137 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header{
+    color: rgb(45,45,45);
+}
+.headerB{
+    display: flex;
+    gap: 100px;
+    justify-content:end;
+    align-items: center;
+    font-size: 18px ;
+    font-weight:600;
+    margin: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* .searchBar{
+    margin-right: 20px !important;
+    border: .15em solid !important;
+    border-color: #c21313 !important;
+    border-radius: 10px;
+    color: rgb(87, 85, 85) !important;
+}
+.searchBar:hover{
+    border-color: rgb(87, 85, 85) !important;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.searchBar::placeholder {
+    color: rgb(87, 85, 85);
+    opacity: 1; 
+}
+.searchBar:focus {
+    border-color: #c21313;
+    outline: none;
+} */
+
+
+.contact{
+    color: white;
+    background-color: #c21313;
+    border-radius: 5px;
+    padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.ButtonImage{
+
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: 450px;
+    left: 200px;
+    gap: 50px;
+    display: flex;
+    
+}
+
+.contact:hover,.portfolio:hover{
+    background-color:rgb(87, 85, 85) ;
+}
+
+
+.icons{
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.icon{
+    margin: 10px;
+}
+
+.portfolio {
+    font-size: 30px;
+    font-weight:600;
+    color: aliceblue;
+    background-color: #c21313;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.hire {
+    font-size: 30px;
+    font-weight:700;
+    color: rgb(60, 60, 60);
+    background-color: #ffffff;
+    padding: 6px 18px !important;
+    border-radius: 20px; 
+    border: 3px solid  rgb(60, 60, 60);
+    cursor: pointer;
+}
+
+.whiteLine {
+    background-color: #ffffff;
+    height: 40px;
+}
+
+.service {
+    background-color: #e6e7e8;
+    height: 1000px;
+}
+
+.MyService{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(45,45,45);
+    padding: 50px;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+
+
+}
+
+.servicesBox{
+    font-weight: bolder;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    background-color:#f0f0f0;
+    font-size: 2em;
+    height: 10em;
+    border-radius: 2em;
+    width: 12em;
 }

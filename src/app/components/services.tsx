@@ -1,0 +1,25 @@
+
+
+export default function archive(){
+    return(<div>
+
+        <div className="whiteLine"></div>
+
+        <div className="service">
+
+        <p className="MyService">My Services</p>
+        <ul className="services">
+            <li className="servicesBox">
+                Logo Design
+            </li>
+            <li className="servicesBox">
+                Post Design
+            </li>
+            <li className="servicesBox">
+                Web Design
+            </li>
+        </ul>
+        </div>
+    </div>
+    )
+}
