@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* header div */
 .header{
     color: rgb(45,45,45);
 }
+
+/* header div ul list (buttons and icons) */
 .headerB{
     display: flex;
     gap: 6em;
@@ -13,29 +17,12 @@
     font-size: 1.2em ;
     font-weight:600;
     margin: 10px;
+    flex-wrap: wrap;
 }
 
-/* .searchBar{
-    margin-right: 20px !important;
-    border: .15em solid !important;
-    border-color: #c21313 !important;
-    border-radius: 10px;
-    color: rgb(87, 85, 85) !important;
-}
-.searchBar:hover{
-    border-color: rgb(87, 85, 85) !important;
-}
-
-.searchBar::placeholder {
-    color: rgb(87, 85, 85);
-    opacity: 1; 
-}
-.searchBar:focus {
-    border-color: #c21313;
-    outline: none;
-} */
 
 
+/* contact button in header  */
 .contact{
     color: white;
     background-color: #c21313;
@@ -45,30 +32,13 @@
     padding-bottom: 2px;
 }
 
-.ButtonImage{
-
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute;
-    top: 450px;
-    left: 200px;
-    gap: 50px;
-    display: flex;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1)
-
-    
-}
-
-.contact:hover,.portfolio:hover{
+/* contact button in header  */
+.contact:hover{
     background-color:rgb(87, 85, 85) ;
+    transition: .3s;
 }
 
-
+/* list of icons in header */
 .icons{
     align-items: center;
     justify-content:center;
@@ -77,40 +47,21 @@
     margin-right: 10px;
 }
 
+/* icons in icons list */
 .icon{
     margin: 10px;
 }
 
-.portfolio {
-    font-size: 30px;
-    font-weight:600;
-    color: aliceblue;
-    background-color: #c21313;
-    padding: 10px;
-    border-radius: 20px;
-
-}
-
-.hire {
-    font-size: 30px;
-    font-weight:700;
-    color: rgb(60, 60, 60);
-    background-color: #ffffff;
-    padding: 6px 18px !important;
-    border-radius: 20px; 
-    border: 3px solid  rgb(60, 60, 60);
-    cursor: pointer;
-}
-
+/* White line for spacing */
 .whiteLine {
     background-color: #ffffff;
     height: 40px;
 }
 
+
 .service {
     background-color: #e6e7e8;
     height: 1000px;
-
 }
 
 .MyService{
@@ -125,8 +76,7 @@
     align-items: center;
     justify-content: center;
     gap: 10em;
-
-
+    flex-wrap: wrap;
 }
 
 .servicesBox{
@@ -138,5 +88,129 @@
     height: 10em;
     border-radius: 2em;
     width: 12em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* My image on header*/
+.imgDiv{
+    /* height: 950px; */
+    display: inline;
+}
+
+
+
+/* div of text on main Image ( name and skills animation ) */
+.styleOnImage{
+    position: absolute;
+    top: 10.5em;
+    left: 3em;
+    font-family: Lato;
+    
+}
+
+
+/* My name on main Image */
+.heading{
+    font-size: 4.8em !important;
+    font-weight: bolder !important;
+    position: relative !important;
+    top: 10px !important;
+    left: 50px !important;
+    font-weight: 700 ;
+    margin: 0%;
+    color: rgb(45,45,45);
+}
+
+/* div of text on main Image ( name and skills animation ) */
+.styleOnImage p{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    font-family:Poppins;
+    left: 50px !important;
+    font-weight: 600;
+    color: rgb(75,75,75) !important;
+}
+
+
+/* for styling on animate text */
+.animate_text{
+  position: absolute;
+  overflow: hidden; 
+  display: inline;
+  font-size: 6em;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  /* letter-spacing: .15em; Adjust as needed */
+  left: 5px;
+  font-size: 45px !important;
+
+  
+}
+
+/* animation on Graphic Designer */
+.animation1{
+    animation: 
+      typing 5.5s steps(40, end) infinite,
+      blink-caret 0.5s step-end infinite;
+}
+
+/* animation on Web Developer */
+.animation2{
+    animation: typing1 5.5s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+}
+  
+
+  /* The typing effect for Graphic Designer */
+  @keyframes typing {
+    0% { width: 12 ;border-right: .15em solid #c21313}
+    10% { width: 14 ;border-right: .15em solid #c21313;}
+    15% { width:68% ;border-right: .15em solid #c21313;}
+    40% { width:60%;border-right: .15em solid #c21313; }
+    50% {width: 0%; border-right:transparent;}
+    100% { width: 0%; border-right:transparent;}
+  }
+
+  /* The typing effect for Web Developer */
+  @keyframes typing1 {
+    0% { width: 0;border-right: transparent;}
+    49% { width: 0;border-right: transparent;}
+    50% { width: 0%; border-right: .15em solid #c21313;}
+    65% { width: 60%;border-right: .15em solid #c21313  }
+    80% { width: 65%;border-right: .15em solid #c21313; }
+    100% { width: 0%;border-right: .15em solid #c21313; }
+  }
+
+/* About text */
+  .About{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(45,45,45);
+    padding: 20px;
+    padding-left: 50px;
+}
+
+/* Main Div of About.tsx file */
+.AboutDiv{
+    background-color: #e6e7e8;
+}
+
+
+/* discription of About */
+.Discription{
+    color: rgb(45,45,45);
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 70px;
+    font-family: monospace;
+}
+
+
+/* text color in discription */
+.textColor{
+    color: #c21313;
+    font-weight: bolder;
 }

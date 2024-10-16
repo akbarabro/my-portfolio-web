@@ -5,6 +5,7 @@ import behance from "@/app/images/behance.png" ;
 
 export default function Header () {
     return (
+        <div>
         <div className="header">
             <ul className="headerB">
                 <li className="buttons"><a href="\">Home</a></li>
@@ -17,8 +18,8 @@ export default function Header () {
                 <li className="icon"><a href="www.github.com/akbarabro"><Image src={github} alt="Icon"/></a></li>
                 <li className="icon"><a href="www.behance.net/akbarabro"><Image src={behance} alt="Icon"/></a></li>
                 </ul>
-                {/* <li ><input className="searchBar" type="search" name="search" id="" placeholder=" Search      " /></li> */}
             </ul>
+        </div>
         </div>
     )
 }

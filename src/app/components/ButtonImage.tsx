@@ -2,32 +2,24 @@
 
 import React from 'react';
 import Image from 'next/image';
-import myImage from "@/app/components/banner.jpg"
+import myImage from "@/app/images/banner.jpg"
 
 
 
 const MyComponent: React.FC = () => {
     return (
-      <div>
-        <Image 
-          src={myImage} 
+      <div className='imgDiv'>
+        <Image
+          src={myImage}
           alt="Description of the image"
-          width={2000} 
-        />
-        <ul className='ButtonImage'>
-          <li>
-          <button className='portfolio'>
-            Portfolio
-        </button>
-          </li>
-          <li>
-          <button className='hire'>
-          Hire Me
-        </button>
-          </li>
-        </ul>
-      </div>
-    );
-  };
-  
-  export default MyComponent;
+          width={2000}/>
+                      <div className="styleOnImage">
+                <h1 className="heading">Hi <br />I'm Ghulam Akbar</h1>
+                <p >
+                    <span className="animate_text animation1">Graphic Designer</span>
+                    <span className="animate_text animation2">Web Developer</span>
+                     </p>    
+            </div>
+            </div>
+    )}
+export default MyComponent;
