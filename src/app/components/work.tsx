@@ -15,18 +15,18 @@ export default function Work(){
                     <li>
                         <div className="workDivLi">
                             <span className="workCount">20 <span className="plus">+</span></span>
-                            <p className="projectTitle">Cosrumer Satisfied</p>
+                            <p className="projectTitle">Customer Satisfied</p>
                         </div>
                     </li>
                     <li>
                         <div className="workDivLi">
-                            <span className="workCount">3 <span className="plus">+</span></span>
+                            <span className="workCount">03 <span className="plus">+</span></span>
                             <p className="projectTitle">Countries Served</p>
                         </div>
                     </li>
                     <li>
                         <div className="workDivLi">
-                            <span className="workCount">3 <span className="plus">+</span></span>
+                            <span className="workCount">03 <span className="plus">+</span></span>
                             <p className="projectTitle">Years Experience</p>
                         </div>
                     </li>

@@ -1,9 +1,12 @@
-import Header from "../components/Header";
+import About from "../components/about"
+import Footer from "../components/footer"
 
 export default function Work(){
     return(
-        <div className="service">
-            
+        <div className="navGap">
+            <About/>
+            <div className="aboutGap"></div>
+            <Footer/>
         </div>
     )
 }

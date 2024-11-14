@@ -6,9 +6,9 @@ import myImage from "@/app/images/banner.jpg"
 
 
 
-const MyComponent: React.FC = () => {
+const MyComponent = () => {
     return (
-      <div className='imgDiv'>
+      <div className='imgDiv'><br /><br />
         <Image
           src={myImage}
           alt="Description of the image"

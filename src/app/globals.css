@@ -6,13 +6,28 @@
 /* header div */
 .header{
     color: rgb(45,45,45);
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    margin: 0% auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 0px 20px rgba(87, 85, 85, 0.199)
+    
 }
+
+.navGap{
+    padding-top: 60px;
+}
+
 
 /* header div ul list (buttons and icons) */
 .headerB{
     display: flex;
     gap: 6em;
-    justify-content:end;
+    justify-content:center;
     align-items: center;
     font-size: 1.2em ;
     font-weight:600;
@@ -26,7 +41,7 @@
 .contact{
     color: white;
     /* background-color: #008080; */
-    background-color: #c21313;
+    background-color: #2898a7;
     border-radius: 5px;
     padding: 8px;
     padding-top: 2px;
@@ -38,65 +53,6 @@
     background-color:rgb(87, 85, 85) ;
     transition: .3s;
 }
-
-/* list of icons in header */
-.icons{
-    align-items: center;
-    justify-content:center;
-    display: flex;
-    width: 120px;
-    margin-right: 10px;
-}
-
-/* icons in icons list */
-.icon{
-    margin: 10px;
-}
-
-/* White line for spacing */
-.whiteLine {
-    background-color: #ffffff;
-    height: 40px;
-}
-
-/* main Service Div */
-.service {
-    background-color: #e6e7e8;
-    height: 1000px;
-    font-family:Poppins;
-}
-
-/* Text My service */
-.MyService{
-    font-size: 50px;
-    font-weight: bolder;
-    color: rgb(45,45,45);
-    padding: 50px;
-}
-
-/* ervices box Ul  */
-.services{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10em;
-    flex-wrap: wrap;
-}
-
-
-/* Servic Boxes */
-.servicesBox{
-    font-weight: bolder;
-    color: rgb(87, 85, 85);
-    text-align: center;
-    background-color:#ffffff;
-    font-size: 2em;
-    height: 10em;
-    border-radius: 2em;
-    width: 12em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 
 
 /* My image on header*/
@@ -115,6 +71,17 @@
     font-family: Lato;
 }
 
+/* div of text on main Image ( name and skills animation ) */
+.styleOnImage p{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    font-family:Poppins;
+    left: 50px !important;
+    font-weight: 600;
+    color: #2898a7 !important;
+}
 
 /* My name on main Image */
 .heading{
@@ -128,17 +95,6 @@
     color: rgb(45,45,45);
 }
 
-/* div of text on main Image ( name and skills animation ) */
-.styleOnImage p{
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 50px;
-    font-family:Poppins;
-    left: 50px !important;
-    font-weight: 600;
-    color: rgb(75,75,75) !important;
-}
 
 
 /* for styling on animate text */
@@ -171,10 +127,10 @@
 
   /* The typing effect for Graphic Designer */
   @keyframes typing {
-    0% { width: 12 ;border-right: .15em solid #c21313}
-    10% { width: 14 ;border-right: .15em solid #c21313;}
-    15% { width:68% ;border-right: .15em solid #c21313;}
-    40% { width:60%;border-right: .15em solid #c21313; }
+    0% { width: 12 ;border-right: .15em solid rgb(45,45,45)}
+    10% { width: 14 ;border-right: .15em solid rgb(45,45,45);}
+    15% { width:68% ;border-right: .15em solid rgb(45,45,45)}
+    40% { width:60%;border-right: .15em solid rgb(45,45,45); }
     50% {width: 0%; border-right:transparent;}
     100% { width: 0%; border-right:transparent;}
   }
@@ -183,20 +139,86 @@
   @keyframes typing1 {
     0% { width: 0;border-right: transparent;}
     49% { width: 0;border-right: transparent;}
-    50% { width: 0%; border-right: .15em solid #c21313;}
-    65% { width: 60%;border-right: .15em solid #c21313  }
-    80% { width: 65%;border-right: .15em solid #c21313; }
-    100% { width: 0%;border-right: .15em solid #c21313; }
+    50% { width: 0%; border-right: .15em solid rgb(45,45,45);}
+    65% { width: 60%;border-right: .15em solid rgb(45,45,45)  }
+    80% { width: 65%;border-right: .15em solid rgb(45,45,45) }
+    100% { width: 0%;border-right: .15em solid rgb(45,45,45) }
   }
 
-/* About  skills experience text */
-  .About ,.skills,.work{
+
+/* list of icons in header */
+.icons{
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* icons in icons list */
+.icon{
+    margin: 10px;
+}
+
+/* White line for spacing */
+.whiteLine {
+    background-color: #ffffff;
+    height: 40px;
+}
+
+/* main Service Div */
+.service {
+    background-color: #e6e7e8;
+    height: 600px;
+    font-family:Poppins;
+}
+
+/* Text My service */
+.MyService{
     font-size: 50px;
     font-weight: bolder;
+    color: rgb(45,45,45);
+}
+
+/* ervices box Ul  */
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    flex-wrap: wrap;
+}
+
+
+/* Servic Boxes */
+.servicesBox{
+    font-weight: bolder;
+    color: rgb(87, 85, 85);
+    text-align: center;
+    background-color:#ffffff;
+    font-size: 2em;
+    height: 10em;
+    border-radius: 2em;
+    width: 12em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* All Title styles */
+  .About ,.skills,.work,.Pot-Title,.MyService{
+    font-size: 50px;
+    font-weight: bolder;
+    /* color: rgb(45,45,45); */
     color: rgb(45,45,45);
     padding: 20px;
     padding-left: 50px;
     font-family: Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* Main Div of About.tsx file */
@@ -217,7 +239,7 @@
 
 /* text color in discription */
 .textColor{
-    color: #c21313;
+    color: #2898a7;
     font-weight: bolder;
 }
 
@@ -279,31 +301,37 @@
 
 /* hover box of skills "li"  */
 .skillsBox:hover{
-    scale: 108%;
+    /* scale: 108%; */
+    background-color: #2898a786;
+    /* background-color: #9ca6b1; */
 }
 
 /* work main div */
 .workMain{
     width: 100%;
     background-color: #e6e7e8;
-    height: 37em;
+    height: 30em;
 }
 
 /* ul of work */
 .workUl{
-    height: 30em;
-    background-color: #d2d5d8;
-    width: 80%;
-    border-radius: 20px;
+    height: 20em;
+    border-radius: 20px ;
     display: flex;
     justify-content: center;
     align-items: end;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
     gap: 8%;
     box-shadow: 4px 4px 20px #0000002a;
-    border: 4px solid white;
-
+    border: 2px solid white;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/work9.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
 }
+
 
 /* div of work ul */
 .divOfWorkul{
@@ -311,13 +339,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    
 }
 
 /* Div of work list */
 .workDivLi{
     font-family:Poppins ;
-    color: rgb(87, 85, 85);
-
+    color: white;
 }
 
 /* numers of work count */
@@ -326,13 +354,266 @@
     font-weight: bolder;
 }
 
+/* Plus sign in Work */
 .plus{
     color: #2898a7
 }
 
+/* Project Title  */
 .projectTitle{
     font-size: x-large;
     font-weight: 700;
+    border-bottom: 3px solid #2898a7;
+}
+
+/* Footer 2nd Main Div */
+.FooterMain{
+    height: 370px;
+    background-color: #2898a7;
+    display: flex;
+}
+
+/* Div of Services and Work text in Footer */
+.FooterDiv1{
+    height: 334px;
+    width: 55%;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+/* Div of contact options in Footer */
+.FooterDiv2{
+    height: 334px;
+    width: 45%;
+    background-color: #2898a7;
+    color: #E6E7E8;
+    padding: 4%;
+}
+
+/* Footer text list of Div 1*/
+.FooterLi{
+    color:#E6E7E8;;
+    font-size: 20px;
+    font-family:Poppins;
+}
+
+/* Footer text of Div 1 */
+.Footer-Text{
+    color: #E6E7E8;;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+/* Div of icons in footer in Div 2 */
+.Footer-Icon-div{
+    display: flex;
+    justify-content: left;
+    align-items: center;;
+    font-weight: 500;
+    font-size: large;
+}
+
+/* Footer Icon */
+.Footer-icon{
+    height: 40px;
+    width: auto;
+}
+
+/* Footer icons of social media */
+.F-icon{
+    width: 25px;
+}
+
+/* Footer icons ul */
+.F-icon-ul{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Footer gmail test */
+.F-gmail{
+    height: 45px;
+    width: 250px;
+    background-color: #E6E7E8;;
+    border-radius: 16px;
+    padding-left: 10px;
+    color: rgb(87, 85, 85);
+}
+
+/* Footer subscribe test */
+.F-subscribe{
+    background-color: rgb(45, 45, 45);
+}
+
+/* Footer main Dive */
+.FooterHome{
+    height: 420px;
+    background-color: #2898a7;
+
+}
+
+/* Footer white line */
+.F-hr{
+    border: 1px solid #E6E7E8;
+    width: 80%;
+    margin: 0% auto;
+}
+
+/* Copywrite icon in footer */
+.Copywrite-Icon{
+    height: 13px;
+    width: auto;
+    fill: white;
+}
+
+/* Footer copywrite div */
+.F-copywriteDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    color: #E6E7E8;
+}
+
+/* globals.css */
+.Main-Div-Pot {
+    min-height: 820px;
+    background-color: #E6E7E8;
+    /* padding: 2rem; */
+    overflow: hidden; /* Prevent overflow during hover */
+    text-align: right;
+}
+
+.portfolio-grid {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Option 1: Zoomed in initially, zooms out on hover */
+.P-li {
+    height: 300px;
+    width: 500px;
+    border-radius: 25px;
+    background-size: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    background-color: #d2d5d8;
+    border: 1px solid #ffffff;
+}
+
+/* Div tag for hover view in li of portfilio */
+.P-li-div{
+    background-image: linear-gradient(to top, #2898a7 , #2898a700);
+    height: 300px;
+    width: 500px;
+    border-radius: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade */
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: 1px solid #ffffff;
+}
+
+/* text of Div tag for hover view in li of portfilio */
+.P-li-div-p{
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+
+}
+/* Hover effects */
+.P-li:hover {
+    transform: scale(1.02); /* Smooth scaling */
+}
+
+.P-li:hover .P-li-div {
+    opacity: 1; /* Fade in */
+    visibility: visible; /* Make visible */
+}
+
+/* ul in portfolio */
+.p-ul1, .p-ul2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.portButton{
+    background-color: #d2d5d8;
+    margin-right: 90px;
+    color: rgb(45,45,45);
+    font-weight: 600;
+    font-size: large;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1.5px solid white;
+    box-shadow: 0px 2px 8px rgba(87, 85, 85, 0.459);
+    margin-bottom: 10px;
+
+}
+
+.button-port{
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Individual portfolio items */
+.p-ul1 li:nth-child(1) {
+    background-image: url('./images/portfolio/P\(1\).png');
+}
+.p-ul1 li:nth-child(2) {
+    background-image: url('./images/portfolio/P\(2\).png');
+}
+.p-ul1 li:nth-child(3) {
+    background-image: url('./images/portfolio/P\(3\).png');
+}
+.p-ul2 li:nth-child(1) {
+    background-image: url('./images/portfolio/p(4).png');
+}
+.p-ul2 li:nth-child(2) {
+    background-image: url('./images/portfolio/p(5).png');
+}
+.p-ul2 li:nth-child(3) {
+    background-image: url('./images/portfolio/P\(6\).png');
+}
+
+/* gap in about page */
+.aboutGap{
+    height: 180px;
+    background-color: #E6E7E8;
+}
+
+/* selection  */
+::selection{
+    background-color: #2898a7;
+    color: white;
+}
+
+/* navbar buttons of navbar */
+.buttons a {
+    color: rgb(87, 85, 85);
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+/* active butttons of navbar */
+.active a {
+    color: #2898a7 !important;
 }
 
 
+.P-page-div{
+    margin-top: -70px;
+}

@@ -8,15 +8,9 @@ export default function archive(){
 
         <p className="MyService">My Services</p>
         <ul className="services">
-            <li className="servicesBox">
-                Logo Design
-            </li>
-            <li className="servicesBox">
-                Post Design
-            </li>
-            <li className="servicesBox">
-                Web Design
-            </li>
+            <li className="servicesBox">Logo Design</li>
+            <li className="servicesBox">Post Design</li>
+            <li className="servicesBox">Web Design</li>
         </ul>
         </div>
     </div>
