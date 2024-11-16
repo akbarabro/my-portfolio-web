@@ -22,7 +22,7 @@ export default function Work(){
              <ul className="p-ul5">
              <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Simple Post</p></div></li>
              <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Fashion Design</p></div></li>
-             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Aplo Logoes</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Apllo Logo</p></div></li>
             </ul>
             <button className="behance-button"><a href="https:www.behance.net/akbarabro">Portfolio <Image className="arrow-icon" src={arrow} alt=""/></a></button>
             </div>

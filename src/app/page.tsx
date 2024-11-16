@@ -8,7 +8,6 @@ import Portfolio from "./components/portfolio"
 import Header from "./components/Header"
 
 
-
 export default function main(){
     return(
         <div>

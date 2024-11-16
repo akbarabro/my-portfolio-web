@@ -14,6 +14,7 @@ export default function Header () {
                 <li className={`buttons ${pathname === '/services' ? 'active' : ''}`}><a href="/services">Services</a></li>
                 <li className={`buttons ${pathname === '/about' ? 'active' : ''}`}><a href="/about">About</a></li>
                 <li className={`buttons ${pathname === '/Portfolio' ? 'active' : ''}`}><a href="/Portfolio">Portfolio</a></li>
+                <li className={`buttons ${pathname === '/contact-me' ? 'active' : ''}`}><a href="/contact-me">Contact Me</a></li>
                 <li className="contact"><a href="/contact">Contact Me</a></li>
                 <ul className="icons">
                 <li className="icon"><a href="www.linkedin.com/in/akbarabro" target="_main" ><Image src={linkedin} alt="Icon"/></a></li>
