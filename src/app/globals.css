@@ -738,7 +738,7 @@
 .C-Detail-div{
     height: 750px;
     width: 500px;
-    background-color: rgb(45,45,45);
+    background-color: #2898a7;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
