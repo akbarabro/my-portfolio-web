@@ -711,6 +711,7 @@
     justify-content: space-evenly;
     align-items: center;
     font-family: poppins;
+    margin-top: -120px;
 
 }
 
@@ -729,11 +730,7 @@
     width: 100%;
 }
 
-/* Title  */
-.C-ReachNow{
-    height: 700px;
-    width: 100%;
-}
+
 
 .C-Detail-div{
     height: 750px;
@@ -776,4 +773,37 @@
     width: 400px;
     border: 1.5px solid white;
     border-radius: 3px;
+}
+
+
+/* Title  */
+.C-ReachNow{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.C-Reach-title{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(45,45,45);
+}
+
+.C-Reach-input{
+    height: 80px;
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.C-Reach-msg{
+    width: 70%;
+    height: 250px;
+    padding-left: 10px;
+    border-radius: 10px;
+    padding-bottom: 200px;
 }

@@ -18,7 +18,14 @@ export default function ContactMe(){
                         </div>
                         </div>
 
-                    <div className="C-ReachNow"></div>
+                    <div className="C-ReachNow">
+                        <p className="C-Reach-title">Reach Now</p>
+                        <input className="C-Reach-input" type="text" placeholder="Name" />
+                        <input className="C-Reach-input"  type="text" placeholder="Email"/>
+                        <input className="C-Reach-input"  type="text" placeholder="Number"/>
+                        <input className="C-Reach-msg" type="text" placeholder="Message"/>
+
+                    </div>
 
                     </div>
                 </div>
