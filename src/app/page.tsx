@@ -6,6 +6,7 @@ import Work from "./components/work"
 import Footer from "./components/footer"
 import Portfolio from "./components/portfolio"
 import Header from "./components/Header"
+import ContactMe from "./components/contactme"
 
 
 export default function main(){
@@ -18,7 +19,8 @@ export default function main(){
             <Portfolio/>
             <Work/>
             <Services/>
-            <Footer/>
+            <ContactMe/>
+            {/* <Footer/> */}
             {/* <div className="whiteLine"></div> */}
         </div>
     )

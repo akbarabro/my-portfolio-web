@@ -20,10 +20,10 @@ export default function Footer (){
                 <li className="FooterLi">Video Editing</li>
             </ul>
             <ul>
-                <li className="FooterLi">About</li>
-                <li className="FooterLi">Contact</li>
-                <li className="FooterLi">My Skills</li>
-                <li className="FooterLi">Projects</li>
+                <li className="FooterLi"><a href="./about">About</a></li>
+                <li className="FooterLi"><a href="./contact-me">Contact</a></li>
+                <li className="FooterLi"><a href="./Portfolio">Portfolio</a></li>
+                <li className="FooterLi"><a href="./services">Services</a></li>
             </ul>
 
 

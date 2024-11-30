@@ -6,7 +6,7 @@
 /* header div */
 .header{
     color: rgb(45,45,45);
-    height: 60px;
+    /* height: 60px; */
     background-color: white;
     position: fixed;
     z-index: 1;
@@ -14,9 +14,11 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    box-shadow: 4px 0px 20px rgba(87, 85, 85, 0.199)
-    
+    box-shadow: 4px 0px 20px rgba(87, 85, 85, 0.199);
+    padding-left: 10vw;
+    padding-right: 1%;
 }
+
 
 .navGap{
     padding-top: 60px;
@@ -26,33 +28,107 @@
 /* header div ul list (buttons and icons) */
 .headerB{
     display: flex;
-    gap: 6em;
-    justify-content:end;
+    justify-content:space-between;
     align-items: center;
-    font-size: 1.2em ;
-    font-weight:600;
+    font-size: 20px ;
+    font-weight:500;
     margin: 10px;
     flex-wrap: wrap;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    gap: 15px;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+
+.header-mobile{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    top: 0;
+    right: 0;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.headerB-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:20px;
+    font-size: 1.2em ;
+    font-weight:600;
+    width: 100%;
+    font-size: large;
+    backdrop-filter: blur(0px) !important;
+    padding-top: 50px;
+    padding-left: 10px;
+    height: 100%;
+
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
 
 
 /* contact button in header  */
-.contact{
+.resume{
     color: white;
     /* background-color: #008080; */
     background-color: #2898a7;
     border-radius: 5px;
-    padding: 8px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 1vw;
+    padding-top: .1vw;
+    padding-bottom: .1vw;
 }
 
 /* contact button in header  */
-.contact:hover{
+.resume:hover{
     background-color:rgb(87, 85, 85) ;
     transition: .3s;
 }
+
+/* navbar buttons of navbar */
+.buttons a {
+    color: rgb(87, 85, 85);
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.buttons:hover a:hover{
+    color: #2898a7;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+/* active butttons of navbar */
+.active a {
+    color: #2898a7 !important;
+    /* display: flex; */
+}
+
+
 
 
 /* My image on header*/
@@ -66,9 +142,9 @@
 /* div of text on main Image ( name and skills animation ) */
 .styleOnImage{
     position: absolute;
-    top: 10.5em;
-    left: 3em;
-    font-family: Lato;
+    top: 170px;
+    left: 3vw;
+    font-family: poppins;
 }
 
 /* div of text on main Image ( name and skills animation ) */
@@ -76,21 +152,20 @@
     display: flex;
     align-items: center;
     position: relative;
-    top: 50px;
+    top: 3vw;
     font-family:Poppins;
-    left: 50px !important;
+    left: 3vw !important;
     font-weight: 600;
     color: #2898a7 !important;
 }
 
 /* My name on main Image */
 .heading{
-    font-size: 4.8em !important;
-    font-weight: bolder !important;
+    font-size: 4.5vw !important;
     position: relative !important;
-    top: 10px !important;
-    left: 50px !important;
-    font-weight: 700 ;
+    top: 1vw !important;
+    left: 3vw !important;
+    font-weight: 600 ;
     margin: 0%;
     color: rgb(45,45,45);
 }
@@ -102,12 +177,11 @@
   position: absolute;
   overflow: hidden; 
   display: inline;
-  font-size: 6em;
   white-space: nowrap; 
   margin: 0 auto; 
   /* letter-spacing: .15em; Adjust as needed */
   left: 5px;
-  font-size: 45px !important;
+  font-size: 2.5vw !important;
 
   
 }
@@ -146,25 +220,12 @@
   }
 
 
-/* list of icons in header */
-.icons{
-    align-items: center;
-    justify-content:center;
-    display: flex;
-    width: 120px;
-    margin-right: 10px;
-}
-
-/* icons in icons list */
-.icon{
-    margin: 10px;
-}
-
 /* White line for spacing */
 .whiteLine {
     background-color: #ffffff;
     height: 40px;
 }
+
 
 
 /* All Title styles */
@@ -173,8 +234,8 @@
     font-weight: bolder;
     /* color: rgb(45,45,45); */
     color: rgb(45,45,45);
-    padding: 20px;
-    padding-left: 50px;
+    padding: 1vw;
+    padding-left: 2.5vh;
     font-family: Poppins;
     display: flex;
     align-items: center;
@@ -192,8 +253,8 @@
 .Discription{
     color: rgb(45,45,45);
     font-size: 25px;
-    padding-left: 150px;
-    padding-right: 180px;
+    padding-left: 8vw;
+    padding-right: 8vw;
     font-family: monospace;
 }
 
@@ -204,6 +265,36 @@
     font-weight: bolder;
 }
 
+
+@media only screen and (max-width:1200px){
+    .headerB{font-size: 18px;padding-top: 6px;}
+    .Discription{font-size: 22px;}
+}
+@media only screen and (max-width:1000px){
+    .headerB{font-size: 16px;padding-top: 6px;}
+    .icons {width: 0px !important;gap: 10px !important;padding-left: 10px;}
+    .icon {width: 18px !important;height: auto;} 
+    .About ,.skills,.work,.Pot-Title,.MyService,.C-Title{font-size: 30px;}
+    .Discription{font-size: 20px; text-align:justify; justify-content: space-around;}
+}
+@media only screen and (max-width:600px){
+    .headerB{display: none;}
+    .menu-icon{height: 40px;width: 40px;position: fixed;top: 0%;display: flex;cursor: pointer;z-index: 1001;}
+    .m-div{display: flex;justify-content: end;align-items: end;}
+    .header-mobile.show {opacity: 0;}
+    .header-mobile.hide {opacity: 1;
+        transform: translateX(0);}
+    .styleOnImage{top: 100px !important}
+    .animate_text{font-size: 3vw !important;}
+    .animation1{
+        animation: 
+          typing 5.5s steps(40, end) infinite,
+          blink-caret 0.5s step-end infinite;
+    }
+    .animation2{
+        animation: typing1 5.5s steps(40, end) infinite, blink-caret 0.5s step-end infinite;
+    }
+}
 
 /* skill main div */
 .skillBack {
@@ -289,7 +380,6 @@
     background-size: cover;
     background-position: center;
     background-image: url(./images/work9.jpeg);
-    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -359,6 +449,10 @@
     color:#E6E7E8;;
     font-size: 20px;
     font-family:Poppins;
+}
+
+.FooterLi:hover{
+    color: white;
 }
 
 /* Footer text of Div 1 */
@@ -593,23 +687,7 @@
     color: white;
 }
 
-/* navbar buttons of navbar */
-.buttons a {
-    color: #989ea5;
-    text-decoration: none;
-    padding: 8px 16px;
-}
-.buttons:hover a:hover{
-    color: #2898a7;
-    text-decoration: none;
-    padding: 8px 16px;
-}
 
-/* active butttons of navbar */
-.active a {
-    color: #2898a7 !important;
-    /* display: flex; */
-}
 
 
 .P-page-div{
@@ -652,7 +730,7 @@
 /* main Service Div */
 .service {
     background-color: #e6e7e8;
-    height: 600px;
+    /* height: 600px; */
     font-family:Poppins;
 }
 
@@ -686,7 +764,7 @@
 
 /* titles in service */
 .S-title{
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 1px;
     padding-top: 20px;
@@ -708,16 +786,17 @@
 /* Contact Main Div */
 .C-main-div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family: poppins;
     margin-top: -120px;
+    gap: 200px;
 
 }
 
 /* div in main div of Service */
 .C-div{
-    width: 80%;
+    width: 70%;
     height: 1000px;
     display: flex;
     justify-content: center;
@@ -744,6 +823,9 @@
     color: white;
 }
 
+.C-Detail-div::selection{
+    color: brown !important;
+}
 .C-D-div{
 
     font-size: 20px;
@@ -788,22 +870,31 @@
 
 .C-Reach-title{
     font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: rgb(45,45,45);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2898a7
 }
 
 .C-Reach-input{
     height: 80px;
-    width: 70%;
+    width:100%;
     border-radius: 10px;
     padding-left: 10px;
+    font-size: x-large;
+    color: rgb(87, 85, 85);
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-color: #fcfcfc;
+    border: 4px solid white;
 }
 
 .C-Reach-msg{
-    width: 70%;
-    height: 250px;
+    width: 100%;
+    height: 280px;
     padding-left: 10px;
     border-radius: 10px;
     padding-bottom: 200px;
+    background-color: #fcfcfc;
+    border: 4px solid white;
+    font-size: x-large;
 }

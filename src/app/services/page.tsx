@@ -5,7 +5,10 @@ export default function Work(){
     return(
         <div className="navGap">
             <Services/>
-            <Footer/>
+            <div  className="navGap"></div>
+            <div  className="navGap"></div>
+            <div  className="navGap"></div>
+            {/* <Footer/> */}
         </div>
     )
 }

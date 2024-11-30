@@ -27,7 +27,7 @@ export default function Work(){
             <button className="behance-button"><a href="https:www.behance.net/akbarabro">Portfolio <Image className="arrow-icon" src={arrow} alt=""/></a></button>
             </div>
 
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

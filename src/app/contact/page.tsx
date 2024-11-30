@@ -1,9 +1,9 @@
-import Header from "../components/Header";
+import ContactMe from "../components/contactme"
 
-export default function Work(){
+export default function ContactPage(){
     return(
-        <div className="service">
-        
-    </div>
+        <div>
+            <ContactMe/>
+        </div>
     )
 }

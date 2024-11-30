@@ -11,7 +11,7 @@ export default function Work(){
             </div>
             <div className="aboutGap"></div>
 
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }
