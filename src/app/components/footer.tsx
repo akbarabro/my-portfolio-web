@@ -33,7 +33,7 @@ export default function Footer (){
                 <div>
                 <p className="Footer-Text" >FOLLOW</p><p className="h-3"></p>
                 <div  className="Footer-Icon-div"><p className="mx-3"><a className="F-mail-nmbr flex items-center ml-[-12px] gap-[13px]" href="mailto:ghulamakbarabbbro110@gmail.com" target="_blank"><Image className="Footer-icon" src={Gmail} alt=""/>ghulamakbarabbbro110@gmail.com</a></p></div><p className="h-2"></p>
-                <div className="Footer-Icon-div"><p className="mx-3"><a className="F-mail-nmbr flex items-center ml-[-12px] gap-[13px]" href="https://wa.me/+923320383382?text=Hello%20there%21" target="_blank"><Image className="Footer-icon" src={Whatsapp} alt=""/>+92 3262268830</a></p></div><p className="h-3"></p>
+                <div className="Footer-Icon-div"><p className="mx-3"><a className="F-mail-nmbr flex items-center ml-[-12px] gap-[13px]" href="https://wa.me/+923262268830?text=Hello%20there%21" target="_blank"><Image className="Footer-icon" src={Whatsapp} alt=""/>+92 3262268830</a></p></div><p className="h-3"></p>
                 <ul className="F-icon-ul">
                 <li className="F-icon"><a href="www.linkedin.com/in/akbarabro" target="_main" ><Image src={linkedin} alt="Icon"/></a></li>
                 <li className="F-icon"><a href="www.github.com/akbarabro"><Image src={github} alt="Icon"/></a></li>
