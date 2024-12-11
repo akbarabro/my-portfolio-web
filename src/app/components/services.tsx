@@ -8,11 +8,11 @@ export default function archive(){
         <div className="service">
 
         <p className="MyService">My Services</p>
-        <ul className="services">
-            <li className="servicesBox"><Image className="S-Icon" src={icon1} alt="Logo Icon"/><p className="S-title">Logo Design</p><p className="S-description">Crafting unique symbols to represent your brand's identity and values</p></li>
-            <li className="servicesBox"><Image className="S-Icon" src={icon2} alt="post Icon"/><p className="S-title">Post Design</p><p className="S-description">Creating eye-catching visuals for social media to boost engagement and reach</p></li>
-            <li className="servicesBox"><Image className="S-Icon" src={icon3} alt="web Icon"/><p className="S-title">Web Design</p><p className="S-description">Designing user-friendly, responsive websites tailored to your brand's needs</p></li>
-        </ul>
+        <div className="services">
+            <div className="servicesBox"><Image className="S-Icon" src={icon1} alt="Logo Icon"/><p className="S-title">Logo Design</p><p className="S-description">Crafting unique symbols to represent your brand's identity and values</p></div>
+            <div className="servicesBox"><Image className="S-Icon" src={icon2} alt="post Icon"/><p className="S-title">Post Design</p><p className="S-description">Creating eye-catching visuals for social media to boost engagement and reach</p></div>
+            <div className="servicesBox"><Image className="S-Icon" src={icon3} alt="web Icon"/><p className="S-title">Web Design</p><p className="S-description">Designing user-friendly, responsive websites tailored to your brand's needs</p></div>
+        </div>
         </div>
     </div>
     )

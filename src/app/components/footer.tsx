@@ -14,8 +14,8 @@ export default function Footer (){
 
             <div className="FooterDiv1">
             <ul>
-                <li className="FooterLi border-b-4 inline mt-2"  >Services</li><p className="h-3"></p>
-                <li className="FooterLi">Graphic Design</li>
+                <li className="FooterLi border-b-2 inline mt-2"  >Services</li><p className="h-3"></p>
+                <li className="FooterLi">Graphic Design</li> 
                 <li className="FooterLi">Web Development</li>
                 <li className="FooterLi">Video Editing</li>
             </ul>
@@ -30,9 +30,10 @@ export default function Footer (){
             </div>
 
             <div className="FooterDiv2">
+                <div>
                 <p className="Footer-Text" >FOLLOW</p><p className="h-3"></p>
-                <div  className=" Footer-Icon-div"><Image className="Footer-icon" src={Gmail} alt=""/><p className="mx-3">ghulamakbarabbbro110@gmail.com</p></div><p className="h-2"></p>
-                <div className=" Footer-Icon-div"><Image className="Footer-icon" src={Whatsapp} alt=""/><p className="mx-3">+92 326 2268830</p></div><p className="h-3"></p>
+                <div  className=" Footer-Icon-div"><Image className="Footer-icon" src={Gmail} alt=""/><p className="mx-3"><a className="F-mail-nmbr" href="mailto:ghulamakbarabbbro110@gmail.com" target="_blank">ghulamakbarabbbro110@gmail.com</a></p></div><p className="h-2"></p>
+                <div className=" Footer-Icon-div"><Image className="Footer-icon" src={Whatsapp} alt=""/><p className="mx-3"><a className="F-mail-nmbr" href="https://wa.me/+923320383382?text=Hello%20there%21" target="_blank">+92 3262268830</a></p></div><p className="h-3"></p>
                 <ul className="F-icon-ul">
                 <li className="F-icon"><a href="www.linkedin.com/in/akbarabro" target="_main" ><Image src={linkedin} alt="Icon"/></a></li>
                 <li className="F-icon"><a href="www.github.com/akbarabro"><Image src={github} alt="Icon"/></a></li>
@@ -43,9 +44,10 @@ export default function Footer (){
                     <input type="text" className="F-gmail" placeholder="Your Gmail"/>
                     <button className="F-subscribe h-11 w-24 bg-slate-300 rounded-2xl text-sm font-bold mx-2">SUBSCRIBE</button>
                 </div>
+                </div>
             </div>
         </div>
-        <hr className="F-hr"/><p className="h-3"></p>
+        <div><hr className="F-hr"/><p className="h-3"></p></div>
         <div className="F-copywriteDiv"><Image className="Copywrite-Icon" src={copywrite} alt=" "/><p>Copyright All rights reserved</p></div>
         </div>
     )

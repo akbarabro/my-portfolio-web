@@ -20,8 +20,6 @@ export default function Skill(){
                 <li className="skillsBox"><Image className="imageOfSkill" src={Premiere} alt=""/>Premiere-Pro</li>
                 <li className="skillsBox"><Image className="imageOfSkill" src={AfterE} alt=""/>After Effect</li>
                 <li className="skillsBox"><Image className="imageOfSkill" src={XD} alt=""/>Adobe XD</li>
-            </ul><hr className="hrSkill" />
-            <ul className="skillsBoxList">
                 <li className="skillsBox"><Image className="imageOfSkill" src={Shopify} alt=""/>Shopify</li>
                 <li className="skillsBox"><Image className="imageOfSkill" src={Htmll} alt=""/>HTML</li>
                 <li className="skillsBox"><Image className="imageOfSkill" src={Css} alt=""/>CSS</li>

@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 /* header div */
 .header{
     color: rgb(45,45,45);
@@ -42,6 +44,7 @@
     align-items: center;
     width: 100px;
     gap: 15px;
+    
 }
 
 .icon {
@@ -86,10 +89,17 @@
 
 }
 
-
+.button-mobile{
+    color: rgb(87, 85, 85);
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 27px;
+}
 
 
 /* /////////////////////////////////////////////////////////////////////////////////////// */
+
+
 
 
 
@@ -102,6 +112,7 @@
     padding: 1vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
+    /* z-index: 1001; */
 }
 
 /* contact button in header  */
@@ -202,12 +213,13 @@
   /* The typing effect for Graphic Designer */
   @keyframes typing {
     0% { width: 12 ;border-right: .15em solid rgb(45,45,45)}
-    10% { width: 14 ;border-right: .15em solid rgb(45,45,45);}
+    10% { width: 14 ;border-right: .15em solid rgb(45,45,45)}
     15% { width:68% ;border-right: .15em solid rgb(45,45,45)}
-    40% { width:60%;border-right: .15em solid rgb(45,45,45); }
-    50% {width: 0%; border-right:transparent;}
-    100% { width: 0%; border-right:transparent;}
+    40% { width:60%;border-right: .15em solid rgb(45,45,45)}
+    50% {width: 0%; border-right:transparent}
+    100% { width: 0%; border-right:transparent}
   }
+
 
   /* The typing effect for Web Developer */
   @keyframes typing1 {
@@ -217,11 +229,11 @@
     65% { width: 60%;border-right: .15em solid rgb(45,45,45)  }
     80% { width: 65%;border-right: .15em solid rgb(45,45,45) }
     100% { width: 0%;border-right: .15em solid rgb(45,45,45) }
-  }
+ }
 
 
-/* White line for spacing */
-.whiteLine {
+ /* White line for spacing */
+ .whiteLine {
     background-color: #ffffff;
     height: 40px;
 }
@@ -235,12 +247,14 @@
     /* color: rgb(45,45,45); */
     color: rgb(45,45,45);
     padding: 1vw;
-    padding-left: 2.5vh;
+    /* padding-left: 2.5vh; */
     font-family: Poppins;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 /* Main Div of About.tsx file */
@@ -256,6 +270,8 @@
     padding-left: 8vw;
     padding-right: 8vw;
     font-family: monospace;
+    text-align: justify;
+    justify-content: space-between;
 }
 
 
@@ -266,40 +282,12 @@
 }
 
 
-@media only screen and (max-width:1200px){
-    .headerB{font-size: 18px;padding-top: 6px;}
-    .Discription{font-size: 22px;}
-}
-@media only screen and (max-width:1000px){
-    .headerB{font-size: 16px;padding-top: 6px;}
-    .icons {width: 0px !important;gap: 10px !important;padding-left: 10px;}
-    .icon {width: 18px !important;height: auto;} 
-    .About ,.skills,.work,.Pot-Title,.MyService,.C-Title{font-size: 30px;}
-    .Discription{font-size: 20px; text-align:justify; justify-content: space-around;}
-}
-@media only screen and (max-width:600px){
-    .headerB{display: none;}
-    .menu-icon{height: 40px;width: 40px;position: fixed;top: 0%;display: flex;cursor: pointer;z-index: 1001;}
-    .m-div{display: flex;justify-content: end;align-items: end;}
-    .header-mobile.show {opacity: 0;}
-    .header-mobile.hide {opacity: 1;
-        transform: translateX(0);}
-    .styleOnImage{top: 100px !important}
-    .animate_text{font-size: 3vw !important;}
-    .animation1{
-        animation: 
-          typing 5.5s steps(40, end) infinite,
-          blink-caret 0.5s step-end infinite;
-    }
-    .animation2{
-        animation: typing1 5.5s steps(40, end) infinite, blink-caret 0.5s step-end infinite;
-    }
-}
 
 /* skill main div */
 .skillBack {
     background-color: #e6e7e8;
-    height: 45em;
+    height: 100%;
+
 }
 
 /* ul of skills box */
@@ -307,7 +295,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 3vw 5.5vw;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* box of skills "li" */
@@ -315,24 +307,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 250px;
-    width: 230px;
+    /* justify-content: space-between; */
+    height: 15vw;
+    width: 13vw;
     background-color: #d2d5d8;
     border-radius: 10px;
     font-family: Poppins;
     font-weight: 600;
-    font-size: x-large;
+    font-size: 22px;
     padding: 10px 0;
     color: rgb(45, 45, 45);
     box-shadow: 4px 4px 20px #0000002a;
     border: 2px solid white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 /* image of skill */
 .imageOfSkill {
-    padding-top: 20px;
-    height: 80px;
+    padding-top: 1vw;
+    height: 75px;
     width: auto;
     margin: 0 auto; /* center horizontally */
 }
@@ -345,198 +340,18 @@
 
 /* image of nextjs */
 .imageOfSkillNext{
-    padding-top: 40px;
+    padding-top: 2vw;
     height:auto;
-    width: 120px;
+    width: 7vw;
     margin: 0 auto; /* center horizontally */
 }
 
 /* hover box of skills "li"  */
 .skillsBox:hover{
-    /* scale: 108%; */
     background-color: #2898a786;
-    /* background-color: #9ca6b1; */
-}
-
-/* work main div */
-.workMain{
-    width: 100%;
-    background-color: #e6e7e8;
-    height: 30em;
-}
-
-/* ul of work */
-.workUl{
-    height: 20em;
-    border-radius: 20px ;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: 2em;
-    gap: 8%;
-    box-shadow: 4px 4px 20px #0000002a;
-    border: 2px solid white;
-    width: 80%;
-    background-size: cover;
-    background-position: center;
-    background-image: url(./images/work9.jpeg);
-    background-repeat: no-repeat;
 }
 
 
-/* div of work ul */
-.divOfWorkul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-    
-}
-
-/* Div of work list */
-.workDivLi{
-    font-family:Poppins ;
-    color: white;
-}
-
-/* numers of work count */
-.workCount{
-    font-size: 80px;
-    font-weight: bolder;
-}
-
-/* Plus sign in Work */
-.plus{
-    color: #2898a7
-}
-
-/* Project Title  */
-.projectTitle{
-    font-size: x-large;
-    font-weight: 700;
-    border-bottom: 3px solid #2898a7;
-}
-
-/* Footer 2nd Main Div */
-.FooterMain{
-    height: 370px;
-    background-color: #2898a7;
-    display: flex;
-}
-
-/* Div of Services and Work text in Footer */
-.FooterDiv1{
-    height: 334px;
-    width: 55%;
-    /* background-color: chocolate; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20%;
-}
-
-/* Div of contact options in Footer */
-.FooterDiv2{
-    height: 334px;
-    width: 45%;
-    background-color: #2898a7;
-    color: #E6E7E8;
-    padding: 4%;
-}
-
-/* Footer text list of Div 1*/
-.FooterLi{
-    color:#E6E7E8;;
-    font-size: 20px;
-    font-family:Poppins;
-}
-
-.FooterLi:hover{
-    color: white;
-}
-
-/* Footer text of Div 1 */
-.Footer-Text{
-    color: #E6E7E8;;
-    font-size: 20px;
-    font-family: Poppins;
-    font-weight: 700;
-}
-
-/* Div of icons in footer in Div 2 */
-.Footer-Icon-div{
-    display: flex;
-    justify-content: left;
-    align-items: center;;
-    font-weight: 500;
-    font-size: large;
-}
-
-/* Footer Icon */
-.Footer-icon{
-    height: 40px;
-    width: auto;
-}
-
-/* Footer icons of social media */
-.F-icon{
-    width: 25px;
-}
-
-/* Footer icons ul */
-.F-icon-ul{
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Footer gmail test */
-.F-gmail{
-    height: 45px;
-    width: 250px;
-    background-color: #E6E7E8;;
-    border-radius: 16px;
-    padding-left: 10px;
-    color: rgb(87, 85, 85);
-}
-
-/* Footer subscribe test */
-.F-subscribe{
-    background-color: rgb(45, 45, 45);
-}
-
-/* Footer main Dive */
-.FooterHome{
-    height: 420px;
-    background-color: #2898a7;
-
-}
-
-/* Footer white line */
-.F-hr{
-    border: 1px solid #E6E7E8;
-    width: 80%;
-    margin: 0% auto;
-}
-
-/* Copywrite icon in footer */
-.Copywrite-Icon{
-    height: 13px;
-    width: auto;
-    fill: white;
-}
-
-/* Footer copywrite div */
-.F-copywriteDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
-    color: #E6E7E8;
-}
-
-/* globals.css */
 .Main-Div-Pot {
     min-height: 820px;
     background-color: #E6E7E8;
@@ -547,13 +362,13 @@
 
 .portfolio-grid {
     max-width: 1600px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* Option 1: Zoomed in initially, zooms out on hover */
 .P-li {
-    height: 300px;
-    width: 500px;
+    height: 272px;
+    width: 450px;
     border-radius: 25px;
     background-size: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -565,8 +380,8 @@
 /* Div tag for hover view in li of portfilio */
 .P-li-div{
     background-image: linear-gradient(to top, #2898a7 , #2898a700);
-    height: 300px;
-    width: 500px;
+    height: 272px;
+    width: 450px;
     border-radius: 25px;
     opacity: 0;
     visibility: hidden;
@@ -576,12 +391,13 @@
     justify-content: center;
     align-items: end;
     border: 1px solid #ffffff;
+    padding-bottom: 20px;
 }
 
 /* text of Div tag for hover view in li of portfilio */
 .P-li-div-p{
     color: white;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     border-bottom: 1px solid white;
 
 }
@@ -596,29 +412,33 @@
 }
 
 /* ul in portfolio */
-.p-ul1, .p-ul2 ,.p-ul3 ,.p-ul4 ,.p-ul5 {
+.p-ul1, .p-ul2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
-    margin: 2rem 0;
+    flex-wrap: wrap;
+    gap: 2vw;
+    /* margin: 2vw 0; */
 }
 .portButton{
     background-color: #2898a7;
-    margin-right: 120px;
+    margin-right: 3vw;
+    margin-top: 10px;
     color: white;
     font-weight: 600;
-    font-size: large;
-    height: 30px;
-    width: 120px;
-    scale: 1.25;
+    font-size: 25px;
+    height: 40px;
+    width: 150px;
     border-radius: 5px;
     border: 1.5px solid white;
-    box-shadow: 0px 2px 8px rgba(87, 85, 85, 0.459);
-    margin-bottom: 15px;
-
+    box-shadow: 0px 0px 10px rgba(87, 85, 85, 0.2);
+    text-align: center;
+    align-self: center;
+    scale: .8;
 }
+
+.text-P-B{margin-bottom: 30px;}
 
 .button-port {
     visibility: hidden;
@@ -635,41 +455,41 @@
 .p-ul1 li:nth-child(3) {
     background-image: url('./images/portfolio/P\(3\).webp');
 }
-.p-ul2 li:nth-child(1) {
+.p-ul1 li:nth-child(4) {
     background-image: url('./images/portfolio/p(4).webp');
 }
-.p-ul2 li:nth-child(2) {
+.p-ul1 li:nth-child(5) {
     background-image: url('./images/portfolio/p(5).webp');
 }
-.p-ul2 li:nth-child(3) {
+.p-ul1 li:nth-child(6) {
     background-image: url('./images/portfolio/P\(6\).webp');
 }
 
-.p-ul3 li:nth-child(1) {
+.p-ul1 li:nth-child(7) {
     background-image: url('./images/portfolio/P\(7\).webp');
 }
-.p-ul3 li:nth-child(2) {
+.p-ul1 li:nth-child(8) {
     background-image: url('./images/portfolio/P\(8\).webp');
 }
-.p-ul3 li:nth-child(3) {
+.p-ul1 li:nth-child(9) {
     background-image: url('./images/portfolio/P\(9\).webp');
 }
-.p-ul4 li:nth-child(1) {
+.p-ul1 li:nth-child(10) {
     background-image: url('./images/portfolio/p(10).webp');
 }
-.p-ul4 li:nth-child(2) {
+.p-ul1 li:nth-child(11) {
     background-image: url('./images/portfolio/p(11).webp');
 }
-.p-ul4 li:nth-child(3) {
+.p-ul1 li:nth-child(12) {
     background-image: url('./images/portfolio/P\(12\).webp');
 }
-.p-ul5 li:nth-child(1) {
+.p-ul1 li:nth-child(13) {
     background-image: url('./images/portfolio/p(13).webp');
 }
-.p-ul5 li:nth-child(2) {
+.p-ul1 li:nth-child(14) {
     background-image: url('./images/portfolio/p(14).webp');
 }
-.p-ul5 li:nth-child(3) {
+.p-ul1 li:nth-child(15) {
     background-image: url('./images/portfolio/P\(15\).webp');
 }
 
@@ -703,7 +523,7 @@
     font-size: large;
     height: 30px;
     width: 120px;
-    scale: 1.5;
+    scale: 1;
     border-radius: 5px;
     border: 1.5px solid white;
     box-shadow: 0px 2px 8px rgba(87, 85, 85, 0.459);
@@ -715,7 +535,7 @@
 
 .behance-button:hover ,.portButton:hover{
     transition: .2s ease-in;
-    box-shadow: 0px 2px 8px #4549498f;
+    box-shadow: 0px 2px 8px #4549493f;
     background-color: rgb(87, 85, 85);
 }
 
@@ -727,19 +547,211 @@
 }
 
 
-/* main Service Div */
-.service {
+
+/* work main div */
+.workMain{
+    width: 100%;
     background-color: #e6e7e8;
-    /* height: 600px; */
+}
+
+/* ul of work */
+.workUl{
+    height: 310px;
+    border-radius: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 2em;
+    gap: 5%;
+    box-shadow: 4px 4px 20px #0000002a;
+    border: 2px solid white;
+    width: 80vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./images/work9.jpeg);
+    background-repeat: no-repeat;
+}
+
+
+/* div of work ul */
+.divOfWorkul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+/* Div of work list */
+.workDivLi{
+    font-family:Poppins ;
+    color: white;
+}
+
+/* numers of work count */
+.workCount{
+    font-size: 3.8vw;
+    font-weight: bolder;
+}
+
+
+/* Plus sign in Work */
+.plus{
+    color: #2898a7
+}
+
+/* Project Title  */
+.projectTitle{
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 3px solid #2898a7;
+}
+
+
+
+/* Footer 2nd Main Div */
+.FooterMain{
+    height: 370px;
+    background-color: #2898a7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+}
+
+/* Div of Services and Work text in Footer */
+.FooterDiv1{
+    height: 334px;
+    width: 500px;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11vw;
+
+}
+
+/* Div of contact options in Footer */
+.FooterDiv2{
+    height: 334px;
+    width: 600px;
+    background-color: #2898a7;
+    color: #E6E7E8;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer text list of Div 1*/
+.FooterLi{
+    color:#E6E7E8;;
+    font-size: 20px;
     font-family:Poppins;
 }
 
-/* Text My service */
-.MyService{
-    font-size: 50px;
-    font-weight: bolder;
-    color: rgb(45,45,45);
+.FooterLi:hover{
+    color: white;
 }
+
+/* Footer text of Div 1 */
+.Footer-Text{
+    color: #E6E7E8;;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+/* Div of icons in footer in Div 2 */
+.Footer-Icon-div{
+    display: flex;
+    justify-content: left;
+    align-items: center;;
+    font-weight: 500;
+    font-size: large;
+    font-family: Poppins;
+}
+
+.Footer-Icon-div:hover,.Footer-Text:hover{
+    color: white;
+}
+
+/* Footer Icon */
+.Footer-icon{
+    height: 40px;
+    width: auto;
+}
+
+/* Footer icons of social media */
+.F-icon{
+    width: 25px;
+}
+
+/* Footer icons ul */
+.F-icon-ul{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Footer gmail test */
+.F-gmail{
+    height: 45px;
+    width: 250px;
+    background-color: #E6E7E8;;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: rgb(87, 85, 85);
+}
+
+/* Footer subscribe test */
+.F-subscribe{
+    background-color: rgb(45, 45, 45);
+    border-radius: 5px;
+}
+
+/* Footer main Dive */
+.FooterHome{
+    height: 420px;
+    background-color: #2898a7;
+    margin-top: 30px;
+
+}
+
+/* Footer white line */
+.F-hr{
+    border: 1px solid #E6E7E8;
+    width: 80%;
+    margin: 0% auto;
+}
+
+/* Copywrite icon in footer */
+.Copywrite-Icon{
+    height: 13px;
+    width: auto;
+    fill: white;
+}
+
+/* Footer copywrite div */
+.F-copywriteDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    color: white;
+}
+
+
+
+/* main Service Div */
+.service {
+    background-color: #e6e7e8;
+    font-family:Poppins;
+}
+
+
 
 /* ervices box Ul  */
 .services{
@@ -748,7 +760,6 @@
     justify-content: center;
     gap: 10em;
     flex-wrap: wrap;
-    padding-top: 30px;
 }
 
 /* li of service panel */
@@ -781,38 +792,38 @@
 /* Service description */
 .S-description{
     padding-top: 15px;
+    height: 110px;
+    /* background-color: #777777; */
 }
 
 /* Contact Main Div */
 .C-main-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: poppins;
-    margin-top: -120px;
-    gap: 200px;
+    /* margin-top: -120px; */
+    width: 100%;
 
 }
 
 /* div in main div of Service */
 .C-div{
-    width: 70%;
-    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 200px;
+    flex-wrap: wrap;
+
 }
 
 /* Div of Contact Detail panel in Services */
 .C-Detail{
     height: 700px;
-    width: 100%;
+    width: 400px;
 }
 
 
 
 .C-Detail-div{
-    height: 750px;
+    height: 650px;
     width: 500px;
     background-color: #2898a7;
     border-radius: 20px;
@@ -830,7 +841,7 @@
 
     font-size: 20px;
     height: 120px;
-    width: 500px;
+    /* width: 500px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -846,13 +857,13 @@
 }
 
 .C-D-line1{
-    width: 400px;
+    width: 80%;
     border: 2px solid white;
     border-radius: 3px;
 }
 
 .C-D-line2{
-    width: 400px;
+    width: 80%;
     border: 1.5px solid white;
     border-radius: 3px;
 }
@@ -861,7 +872,7 @@
 /* Title  */
 .C-ReachNow{
     height: 700px;
-    width: 100%;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -876,11 +887,11 @@
 }
 
 .C-Reach-input{
-    height: 80px;
+    height: 90px;
     width:100%;
     border-radius: 10px;
     padding-left: 10px;
-    font-size: x-large;
+    font-size: 20px;
     color: rgb(87, 85, 85);
     font-weight: 400;
     letter-spacing: 1px;
@@ -891,10 +902,308 @@
 .C-Reach-msg{
     width: 100%;
     height: 280px;
-    padding-left: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
     border-radius: 10px;
     padding-bottom: 200px;
     background-color: #fcfcfc;
     border: 4px solid white;
-    font-size: x-large;
+    font-size: 20px;
+    color: rgb(87, 85, 85);
+}
+
+.submit-b{
+    background-color: #2898a7;
+    /* margin-right: 3vw; */
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1.5px solid white;
+    box-shadow: 0px 0px 10px rgba(87, 85, 85, 0.2);
+    text-align: center;
+    align-self: center;
+    scale: .8;
+}
+
+
+
+
+
+
+  
+
+  .thanku-popup{
+    height: 300px;
+    width: 50vw;
+    font-size: 2vw;
+    border: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgba(45, 45, 45, 0.336);
+    background-color: white;
+    position: fixed;
+    z-index: 10000;
+    opacity: .9;
+    text-align: center;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem; /* equivalent to p-4 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); /* equivalent to shadow-lg */
+    animation: fadeIn .5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: .9;
+    }
+}
+
+
+.thanku-text{
+    color: #2898a7;
+}
+
+.thanku-text1{
+    color: rgb(45, 45, 45);
+}
+
+
+
+
+
+
+@media only screen and (max-width:1460px){
+    .imageOfSkill{height: 60px;}
+    .skillsBox{font-size: 19px;}
+    .P-li{margin-right:45px ;margin-left: 45px;}
+    .workUl{height: 230px;}
+    .projectTitle{font-size: 20px;}
+    .C-div{gap: 150px;}
+
+}
+@media only screen and (max-width:1350px){
+    .imageOfSkill{height: 60px;}
+    .skillsBox{font-size: 19px;}
+    .P-li{margin-right:35px ;margin-left: 35px;}
+    .portButton{scale: .8;}
+    .p-ul2{margin-top: 45px;}
+    .workUl{height: 200px;}
+    .projectTitle{font-size: 18px; font-weight: 500;}
+    .C-ReachNow{width: 580px;}
+    .FooterDiv1{gap: 70px;}
+    .FooterMain{gap: 4vw;}
+}
+
+@media only screen and (max-width:1200px){
+    .skillsBoxList{margin: 0%;}
+    .headerB{font-size: 18px;padding-top: 6px;}
+    .Discription{font-size: 22px;}
+    .skillBack{height: 100% !important;margin-bottom: 10px;}
+    .imageOfSkill{height: 55px;}
+    .imageOfSkillNext{height: 40px;width: auto;}
+    .About ,.skills,.work,.Pot-Title,.MyService,.C-Title{font-size: 40px;}
+    .skillsBox{font-size: 17px;}
+    .skillsBoxList{padding-top: 15px}
+    .P-li{margin-right: 15px;margin-left:15px;}
+    .portButton{scale: .7;}
+    .p-ul2{margin-top: 45px;}
+    .workUl{height: 180px;}
+    .projectTitle{border-bottom: 2px solid #2898a7;font-size: 16px;}
+    .thanku-popup{height: 200px; border-radius: 15px;}
+    .C-ReachNow{width: 500px;}
+    .C-Detail{width: auto;}
+    .C-Detail-div{height: 580px; margin-top: 60px;}
+    .C-div{gap: 50px;}
+    .C-Detail-div{width: 400px;}
+    .C-D-title{font-size: 20px;}
+    .C-D-div{font-size: 16px;}
+    .C-Reach-title{font-size: 25px;}
+    .FooterDiv1{gap: 80px;width: 400px;}
+    .FooterMain{gap: 5vw;}
+    .FooterDiv2{width: 400px;padding: 0%;}
+    .FooterLi{color: white; font-size: 17px; line-height: 30px;}
+    .Footer-Text{color: white; font-weight: 500; font-size: 17px;}
+    .Footer-icon{height: 30px;}
+    .F-mail-nmbr{font-size: 17px;font-weight: 500 !important; color: white;}
+}
+@media only screen and (max-width:1000px){
+    .headerB{font-size: 16px;padding-top: 6px;}
+    .icons {width: 0px !important;gap: 10px !important;padding-left: 10px;}
+    .icon {width: 18px !important;height: auto;} 
+    .About ,.skills,.work,.Pot-Title,.MyService,.C-Title{font-size: 30px;}
+    .Discription{font-size: 18px; text-align:justify; justify-content: space-around;}
+    .skillsBox{height: 150px;width: 140px;font-size: 15px !important;padding-bottom: 4px;}
+    .imageOfSkill{height: 48px;}
+    .imageOfSkillNext{height: 28px;width: auto;}
+    .skillsBoxList{padding-top: 10px}
+    .skillBack{height: 100%;margin-bottom: 10px;}
+    .skillsBox:hover{background-color: #d2d5d8;} 
+    .P-li{margin-left: 0vw !important; margin-right: 0vw !important;width: 330px;height: 200px;}
+    .P-li-div{width: 330px;height: 200px;}
+    .p-ul2{margin-top: -115px;}
+    .workUl{height: 150px; gap: 3%; border-radius: 13px;}
+    .projectTitle{font-size: 13px;}
+    .services{gap:13px 80px;padding: 0% 1em;}
+    .behance-button{scale: 1;}
+    .thanku-popup{height: 150px; border-radius: 10px;font-size: 2.5vw;}
+    .C-div{gap: 4vw;margin-top: -50px;}
+    .C-ReachNow{width: 340px; height: 600px;}
+    .C-Reach-input{height: 60px;font-size: 16px;}
+    .C-Reach-msg{font-size: 16px;}
+    .C-Detail-div{width: 320px;}
+    .C-D-div{font-size: 14px;}
+    .C-D-line1{border: 1.5px solid white;}
+    .C-Reach-title{font-size: 20px;}
+    .FooterDiv1{width: 280px; gap: 20px;height: 300px;}
+    .FooterDiv2{width: 380px;}
+    .FooterMain{gap: 4vw;height: auto;}
+    .FooterHome{height: 380px;}
+}
+
+
+
+@media only screen and (max-width:700px){
+    .P-li{width: 290px;height: 180px;}
+    .P-li-div{width: 290px;height: 180px;}
+    .p-ul2{margin-top: -180px;}
+    .workUl{height: 120px; gap: 30px; border-radius: 10px;padding-bottom: 15px; padding-right: 20px; padding-left: 20px;}
+    .projectTitle{font-size: 14px;border-bottom: 0px;}
+    .services{padding-top: 0px;}
+    .thanku-popup{height: 100px; border-radius: 8px; z-index: 99999;position: absolute; top: 30%; left: 55%; scale: 1.5;}
+    .C-Detail-div{width: 450px;}
+    .C-div{gap: 15px;}
+    .C-Detail{height: 650px;}
+    .C-ReachNow{width: 450px;}
+    .C-D-div{font-size: 17px;}
+    .FooterDiv1{width: 90vw;height: 180px;margin: 0% auto; gap: 20%; border-bottom: 1px solid white; border-radius: 0%;}
+    .FooterDiv2{width: 100vw; height: 300px;}
+    .FooterMain{gap: 0%;}
+    .FooterHome{height: auto;}
+    .F-hr{width: 100%;}
+}
+
+
+
+@media only screen and (max-width:600px){
+    .headerB{display: none;}
+    .menu-icon{height: 40px;width: 40px;position: fixed;top: 0%;display: flex;cursor: pointer;z-index: 1001;background-color: #E6E7E8;border-radius: 10%;opacity: 100%;}
+    .m-div{display: flex;justify-content: end;align-items: end;}
+    .header-mobile.show {opacity: 0;}
+    .header-mobile.hide {opacity: 1;transform: translateX(0);}
+    .styleOnImage{top: 70px !important}
+    .animate_text{font-size: 3vw !important;scale: 1.2;}
+    .Discription{font-size: 15px; text-align:justify; justify-content: space-around;}
+    .animation1{animation: 
+          typing 5.5s steps(40, end) infinite,
+          blink-caret 0.5s step-end infinite;
+    }
+    .animation2{
+        animation: typing1 5.5s steps(40, end) infinite, blink-caret 0.5s step-end infinite;
+    }
+    .skillsBox{height: 120px;width: 110px;font-size: 13px !important;padding-bottom: 4px;}
+    .imageOfSkill{height: 37px;}
+    .imageOfSkillNext{height: 21px;width: auto;}
+    .skillsBoxList{padding-top: 10px}
+    .skillBack{height: 100%;margin-bottom: 10px;}
+    .skillsBox:hover{background-color: #d2d5d8;} 
+   .About ,.skills,.work,.Pot-Title,.MyService,.C-Title{font-size: 26px;}
+   .P-li{width: 90vw;height: 54vw;}
+   .P-li-div{width: 90vw;height: 54vw;}
+   .p-ul1,.p-ul2{gap: 20px}
+   .p-ul2{margin-top: 40px;}
+   .projectTitle{border-bottom: 1px solid #2898a7;}
+   .projectTitle{font-size: 13px}
+   .workUl{padding-left: 5% ; padding-right: 5%; width: 90%; border: 2px solid white;}
+   .S-title{font-size: 25px}
+   .thanku-popup{height: 80px; border-radius: 6px;}
+   .FooterDiv1{gap: 30%;}
+
+}
+
+
+
+@media only screen and (max-width:500px){
+    .workUl{height: 200px;display: grid;grid-template-columns: repeat(2,1fr);padding: 0% auto; grid-column-gap:0% ;    background-image: url(./images/work13.jpg);}
+    .projectTitle{border-bottom: 0px solid #2898a7;text-align: center;}
+    .workCount{text-align: center;align-items: center;display: flex;justify-content: center;font-size: 30px; gap: 5px;}
+    .services{gap: 30px;}
+    .thanku-popup{height: 70px; border-radius: 6px;}
+    .C-Detail-div{width: 370px;}
+    .C-ReachNow{width: 370px;}
+    .C-D-div{font-size: 15px;}
+    .FooterLi{font-size: 15px; font-weight: 400;}
+    .Footer-Text{font-size: 15px;}
+    .F-mail-nmbr{font-size: 15px;}
+    .F-subscribe{font-size: 12px; width: 80px;}
+    .F-gmail{font-size: 12px; width: 200px;}
+}
+
+
+@media only screen and (max-width:400px){
+    .heading{font-size: 5.5vw;top: 0vw !important;}
+    .menu-icon{height: 35px;width: 35px;position: fixed;top: 0%;display: flex;cursor: pointer;z-index: 1001;}
+    .animate_text{font-size: 4vw !important;scale: none;}
+    .Discription{font-size: 14px; text-align:justify; justify-content: space-around;}
+    .animation1{
+        animation: 
+          typing 5.5s steps(40, end) infinite,
+          blink-caret 0.5s step-end infinite;
+    }
+    .animation2{
+        animation: typing1 5.5s steps(40, end) infinite, blink-caret 0.5s step-end infinite;
+    }
+      /* The typing effect for Graphic Designer */
+  @keyframes typing {
+    0% { width: 12 ;border-right: .15em solid rgb(45,45,45)}
+    10% { width: 14 ;border-right: .15em solid rgb(45,45,45)}
+    15% { width:90% ;border-right: .15em solid rgb(45,45,45)}
+    40% { width:60%;border-right: .15em solid rgb(45,45,45)}
+    50% {width: 0%; border-right:transparent}
+    100% { width: 0%; border-right:transparent}
+  }
+
+
+  /* The typing effect for Web Developer */
+  @keyframes typing1 {
+    0% { width: 0;border-right: transparent;}
+    49% { width: 0;border-right: transparent;}
+    50% { width: 0%; border-right: .15em solid rgb(45,45,45);}
+    65% { width: 80%;border-right: .15em solid rgb(45,45,45)  }
+    80% { width: 65%;border-right: .15em solid rgb(45,45,45) }
+    100% { width: 0%;border-right: .15em solid rgb(45,45,45) }
+    }
+    .skillsBox{height: 100px;width: 95px;font-size: 12px !important;padding-bottom: 4px;}
+    .imageOfSkill{height: 30px;}
+    .imageOfSkillNext{height: 20px;width: auto;}
+    .skillBack{height: 100%;}
+    .skillsBox:hover{
+    background-color: #d2d5d8;
+    } 
+    .About ,.skills,.work,.Pot-Title,.MyService,.C-Title{font-size: 7vw;}
+    .projectTitle{font-size: 11px;}
+    .workUl{border: 2px solid white; width: 90vw;}
+    .workCount{font-size: 25px;}
+    .P-li{border-radius: 8px;}
+    .P-li-div{border-radius: 8px;}
+    .S-title{font-size: 23px;}
+    .thanku-popup{height: 60px; border-radius: 6px; font-size: 3vw; width: 60vw;}
+    .C-Detail-div{width: 300px;height: 500px;}
+    .C-ReachNow{width: 300px;}
+    .C-D-div{font-size: 14px;}
+    .C-D-line1{border: 0.5px solid white;}
+    .C-D-line2{border: 0.5px solid white;}
+    .C-Detail{height: 570px;}
+    .F-mail-nmbr{font-size: 13px;}
 }

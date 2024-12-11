@@ -1,7 +1,7 @@
 import Footer from "../components/footer"
 export default function ContactMe(){
     return(
-        <div className="navGap">
+        <div className="">
             <div>
                 <p className="C-Title">Contact</p>
                 <div className="C-main-div">
@@ -18,13 +18,14 @@ export default function ContactMe(){
                         </div>
                         </div>
 
-                    <div className="C-ReachNow">
+                    <form className="C-ReachNow">
                         <p className="C-Reach-title">Reach Now</p>
-                        <input className="C-Reach-input" type="text" placeholder="Name" />
-                        <input className="C-Reach-input"  type="text" placeholder="Email"/>
+                        <input className="C-Reach-input" type="text" placeholder="Name" required/>
+                        <input className="C-Reach-input"  type="text" placeholder="Email" required/>
                         <input className="C-Reach-input"  type="text" placeholder="Number"/>
-                        <input className="C-Reach-msg" type="text" placeholder="Message"/>
-                    </div>
+                        <textarea className="C-Reach-msg pt-[10px]" rows={4} cols={50} placeholder="Message"required ></textarea>
+                        <input type="submit" value="Send" className="submit-b" />
+                    </form>
                     
                     </div>
                 </div>
