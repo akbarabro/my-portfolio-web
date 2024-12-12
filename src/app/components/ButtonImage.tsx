@@ -14,7 +14,7 @@ const MyComponent = () => {
           alt="Description of the image"
           width={2000}/>
                       <div className="styleOnImage">
-                <h1 className="heading">Hi <br />I'm Ghulam Akbar</h1>
+                      <h1 className="heading">Hi <br />I&apos;m Ghulam Akbar</h1>
                 <p >
                     <span className="animate_text animation1">Graphic Designer</span>
                     <span className="animate_text animation2">Web Developer</span>

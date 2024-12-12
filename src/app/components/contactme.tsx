@@ -19,7 +19,7 @@ const ContactMe: React.FC = () => {
     setStatus(null);
 
     try {
-      const response = await fetch('/api/sendEmaill', {
+      const response = await fetch('/api/sendEmail', { // Fixed typo in URL
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -33,7 +33,7 @@ const ContactMe: React.FC = () => {
       } else {
         setStatus(result.error || 'Failed to send email.');
       }
-    } catch (error) {
+    } catch {
       setStatus('An error occurred. Please try again.');
     }
   };
