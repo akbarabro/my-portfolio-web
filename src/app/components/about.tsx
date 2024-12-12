@@ -1,4 +1,3 @@
-import styles from './about.module.css'; // Import the CSS module
 
 export default function About() {
     return (

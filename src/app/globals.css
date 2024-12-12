@@ -887,9 +887,9 @@
 }
 
 .C-Reach-input{
-    height: 90px;
+    height: 80px;
     width:100%;
-    border-radius: 10px;
+    border-radius: 7px;
     padding-left: 10px;
     font-size: 20px;
     color: rgb(87, 85, 85);
@@ -904,7 +904,7 @@
     height: 280px;
     padding-left: 2%;
     padding-right: 2%;
-    border-radius: 10px;
+    border-radius: 6px;
     padding-bottom: 200px;
     background-color: #fcfcfc;
     border: 4px solid white;
@@ -1060,7 +1060,7 @@
     .thanku-popup{height: 150px; border-radius: 10px;font-size: 2.5vw;}
     .C-div{gap: 4vw;margin-top: -50px;}
     .C-ReachNow{width: 340px; height: 600px;}
-    .C-Reach-input{height: 60px;font-size: 16px;}
+    .C-Reach-input{height: 52px;font-size: 16px;}
     .C-Reach-msg{font-size: 16px;}
     .C-Detail-div{width: 320px;}
     .C-D-div{font-size: 14px;}
