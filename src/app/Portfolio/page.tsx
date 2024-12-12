@@ -1,5 +1,3 @@
-import Portfolio from "../components/portfolio"
-import Footer from "../components/footer"
 import Image from "next/image"
 import arrow from "../images/right-arrow.svg"
 
