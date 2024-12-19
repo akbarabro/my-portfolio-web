@@ -3,7 +3,7 @@ import arrow from "../images/right-arrow.svg"
 
 export default function Work(){
     return(
-        <div className="navGap">
+        <div>
             {/* <Portfolio/> */}
             <div className="Main-Div-Pot">
              <p className="Pot-Title">Portfolio</p>

@@ -2,7 +2,7 @@ import About from "../components/about"
 
 export default function Work(){
     return(
-        <div className="navGap">
+        <div>
             <About/>
             <div>
                 <div></div>

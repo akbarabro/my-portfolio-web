@@ -2,7 +2,7 @@ import Services from "@/app/components/services"
 
 export default function Work(){
     return(
-        <div className="navGap">
+        <div>
             <Services/>
             <div  className="navGap"></div>
             <div  className="navGap"></div>
