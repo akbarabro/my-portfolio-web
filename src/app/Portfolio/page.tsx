@@ -29,6 +29,15 @@ export default function Work(){
              <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Fashion Design</p></div></li>
              <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Apllo Logo</p></div></li>
              <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Visiting Card</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Vector Art</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Post Design</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Texture</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Design</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Vite Logo</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">ID Card</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Celender</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Envelope</p></div></li>
+             <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Wall Product</p></div></li>
             </ul>
            <div className="flex justify-center items-center"> <button className="behance-button"><a href="https:www.behance.net/akbarabro">Behance <Image className="arrow-icon" src={arrow} alt=""/></a></button></div>
             </div>
