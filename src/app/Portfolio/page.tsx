@@ -40,7 +40,7 @@ export default function Work(){
              <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Envelope</p></div></li>
              <li className="P-li"><div className="P-li-div"><p className="P-li-div-p">Wall Product</p></div></li>
             </ul>
-           <div className="flex justify-center items-center"> <button className="behance-button"><Link href="https:www.behance.net/akbarabro">Behance <Image className="arrow-icon" src={arrow} alt=""/></Link></button></div>
+           <div className="flex justify-center items-center"> <button className="behance-button"><Link href="https://www.behance.net/akbarabro">Behance <Image className="arrow-icon" src={arrow} alt=""/></Link></button></div>
             </div>
         </div>
     )
